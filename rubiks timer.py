@@ -12,7 +12,7 @@ while True:
     k.wait('shift')
     end = t()
     timeTaken = round(end - start, 3)
-    dec = input((f'{timeTaken}, would you like to keep this time? y/n: '))
+    dec = input((f'{timeTaken}, would you like to keep this time? y/n: ')).lower().strip()
     if dec == 'y':
         counter += 1
         allTimes.append(timeTaken)
